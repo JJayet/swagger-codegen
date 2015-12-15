@@ -6,38 +6,7 @@ import static org.testng.Assert.assertNotNull;
 
 import io.swagger.codegen.CliOption;
 import io.swagger.codegen.CodegenConfigLoader;
-import io.swagger.codegen.options.AkkaScalaClientOptionsProvider;
-import io.swagger.codegen.options.AndroidClientOptionsProvider;
-import io.swagger.codegen.options.AsyncScalaClientOptionsProvider;
-import io.swagger.codegen.options.CSharpClientOptionsProvider;
-import io.swagger.codegen.options.CsharpDotNet2ClientOptionsProvider;
-import io.swagger.codegen.options.DartClientOptionsProvider;
-import io.swagger.codegen.options.FlashClienOptionsProvider;
-import io.swagger.codegen.options.JavaInflectorServerOptionsProvider;
-import io.swagger.codegen.options.JavaOptionsProvider;
-import io.swagger.codegen.options.JaxRSServerOptionsProvider;
-import io.swagger.codegen.options.NodeJSServerOptionsProvider;
-import io.swagger.codegen.options.ObjcClientOptionsProvider;
-import io.swagger.codegen.options.OptionsProvider;
-import io.swagger.codegen.options.PerlClientOptionsProvider;
-import io.swagger.codegen.options.PhpClientOptionsProvider;
-import io.swagger.codegen.options.PythonClientOptionsProvider;
-import io.swagger.codegen.options.Qt5CPPOptionsProvider;
-import io.swagger.codegen.options.RubyClientOptionsProvider;
-import io.swagger.codegen.options.ScalaClientOptionsProvider;
-import io.swagger.codegen.options.ScalatraServerOptionsProvider;
-import io.swagger.codegen.options.SilexServerOptionsProvider;
-import io.swagger.codegen.options.SinatraServerOptionsProvider;
-import io.swagger.codegen.options.SlimFrameworkServerOptionsProvider;
-import io.swagger.codegen.options.SpringMVCServerOptionsProvider;
-import io.swagger.codegen.options.StaticDocOptionsProvider;
-import io.swagger.codegen.options.StaticHtmlOptionsProvider;
-import io.swagger.codegen.options.SwaggerOptionsProvider;
-import io.swagger.codegen.options.SwaggerYamlOptionsProvider;
-import io.swagger.codegen.options.SwiftOptionsProvider;
-import io.swagger.codegen.options.TizenClientOptionsProvider;
-import io.swagger.codegen.options.TypeScriptAngularClientOptionsProvider;
-import io.swagger.codegen.options.TypeScriptNodeClientOptionsProvider;
+import io.swagger.codegen.options.*;
 import io.swagger.generator.exception.ApiException;
 import io.swagger.generator.model.GeneratorInput;
 
@@ -73,7 +42,7 @@ public class OnlineGeneratorOptionsTest {
                 {new CsharpDotNet2ClientOptionsProvider()}, {new DartClientOptionsProvider()},
                 {new FlashClienOptionsProvider()}, {new JavaInflectorServerOptionsProvider()},
                 {new JavaOptionsProvider()}, {new JaxRSServerOptionsProvider()},
-                {new NodeJSServerOptionsProvider()}, {new ObjcClientOptionsProvider()},
+                {new HaxeNodeJSServerOptionsProvider()}, {new ObjcClientOptionsProvider()},
                 {new PerlClientOptionsProvider()}, {new PhpClientOptionsProvider()},
                 {new PythonClientOptionsProvider()}, {new Qt5CPPOptionsProvider()},
                 {new RubyClientOptionsProvider()}, {new ScalaClientOptionsProvider()},
