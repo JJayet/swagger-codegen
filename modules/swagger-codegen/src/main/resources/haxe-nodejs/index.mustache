@@ -1,0 +1,18 @@
+import js.npm.Express;
+import js.npm.express.Request;
+import js.npm.express.Response;
+import js.npm.express.Static;
+
+class Api {
+
+  static var PORT = {{serverPort}};
+  public static function main() {
+    var app : js.npm.express.Application = new js.npm.Express();
+
+    app.use('/doc', new js.npm.express.Static('./doc'));
+
+    app.listen(PORT);
+    trace("api running on port "+PORT);
+
+  }
+}
