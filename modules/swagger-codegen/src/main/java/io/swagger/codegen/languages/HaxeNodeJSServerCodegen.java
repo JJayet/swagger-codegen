@@ -74,12 +74,12 @@ public class HaxeNodeJSServerCodegen extends DefaultCodegen implements CodegenCo
         //   "controller.js")
         // );
         supportingFiles.add(new SupportingFile("swagger.mustache",
-                "api",
+                "src/api",
                 "swagger.yaml")
         );
         supportingFiles.add(new SupportingFile("index.mustache",
-                "",
-                "index.hx")
+                "src",
+                "Main.hx")
         );
         supportingFiles.add(new SupportingFile("build.mustache",
                 "",
@@ -101,7 +101,7 @@ public class HaxeNodeJSServerCodegen extends DefaultCodegen implements CodegenCo
     }
 
     public String apiPackage() {
-        return "controllers";
+        return "src/controllers";
     }
 
     /**
