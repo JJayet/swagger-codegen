@@ -50,11 +50,12 @@ public class HaxeNodeJSServerCodegen extends DefaultCodegen implements CodegenCo
          */
         reservedWords = new HashSet<String>(
                 Arrays.asList(
-                        "break", "case", "class", "catch", "const", "continue", "debugger",
-                        "default", "delete", "do", "else", "export", "extends", "finally",
-                        "for", "function", "if", "import", "in", "instanceof", "let", "new",
-                        "return", "super", "switch", "this", "throw", "try", "typeof", "var",
-                        "void", "while", "with", "yield")
+                        "break", "callback", "case", "cast", "class", "catch", "continue",
+                        "default", "dynamic", "do", "else", "enum", "extends", "extern", "false", "here",
+                        "for", "function", "if", "implements", "in", "import", "inline", "interface",
+                        "never", "new", "null", "override", "package", "private", "public",
+                        "return", "static", "super", "switch", "throw", "this", "trace",
+                        "true", "try", "typedef", "untyped", "using", "var", "while")
         );
 
         /**
